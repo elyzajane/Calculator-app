@@ -42,4 +42,16 @@ def calculate():
 # An error message will appear if the user enter invalid number then ask to enter their choice again
             print("An error occured! Please enter valid numbers.")
 # Perform the selected operation
+    if operation == 1:
+        result = operate(num1, num2, "+")
+        operator_symbol = "+"
+    elif operation == 2:
+        result = operate(num1, num2, "-")
+        operator_symbol = "-"
+    elif operation == 3:
+        result = operate(num1, num2, "*")
+        operator_symbol = "*"
+    else:
+        result = operate(num1, num2, "/")
+        operator_symbol = "/"
 # Print the result
