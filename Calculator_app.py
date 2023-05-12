@@ -55,3 +55,22 @@ def calculate():
         result = operate(num1, num2, "/")
         operator_symbol = "/"
 # Print the result
+    print((num1, operator_symbol, num2, result))
+
+     # Ask the user if they want to perform another calculation with the given choices (yes or no)
+    while True:
+        try:
+            choice = input("Do you want to perform another calculation? (yes/no):")
+            if choice.lower() == 'yes':
+                calculate()
+                break
+            elif choice.lower() == 'no':
+                print("Thank you and have a good day!")
+                break
+            else:
+                raise ValueError
+        except ValueError:
+            print("Invalid input! Please enter 'yes' or 'no'")
+        calculate()
+        return
+
