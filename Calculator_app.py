@@ -1,5 +1,18 @@
 # Use def function to perform mathematical operations
-# Use if-else statements to know which operation is needed
+import operator
+
+def operate(num1, num2, op):
+    # Use if-else statements to know which operation is needed
+    if op == "+":
+        return operator.add(num1, num2)
+    elif op == "-":
+        return operator.sub(num1, num2)
+    elif op == "*":
+        return operator.mul(num1, num2)
+    elif op == "/":
+        return operator.truediv(num1, num2)
+    else:
+        raise ValueError("\033[1;31;40mInvalid operator\033[0m")
 # Use def function to get user input 
 # Display the options
 # Get user input for the chosen operation
