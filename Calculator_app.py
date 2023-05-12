@@ -27,12 +27,19 @@ def calculate():
         try:
             operation = int(input("Enter your choice (1/2/3/4):"))
 # An error  message will apper if the user enters an invalid choice
-        if operation < 1 or operation > 4:
-            raise ValueError
-        break
+            if operation < 1 or operation > 4:
+                raise ValueError
+            break
         except ValueError:
-    print("\033[1;31;40mInvalid choice! Please enter a valid choice (1/2/3/4).\033[0m")
+            print("Invalid choice! Please enter a valid choice.")
 # Ask the user to input two numbers to perform the operation
+    while True:
+        try:
+            num1 = float(input("Enter first number:"))
+            num2 = float(input("Enter second number:"))
+            break
+        except ValueError:
 # An error message will appear if the user enter invalid number then ask to enter their choice again
+            print("An error occured! Please enter valid numbers.")
 # Perform the selected operation
 # Print the result
