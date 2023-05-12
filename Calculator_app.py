@@ -36,22 +36,22 @@ def calculate():
 # Get user input for the chosen operation
     while True:
         try:
-            operation = int(input("Enter your choice (1/2/3/4):"))
+            operation = int(input("\033[1;33;40mEnter your chosen operation (1/2/3/4): \033[0m"))
 # An error  message will apper if the user enters an invalid choice
             if operation < 1 or operation > 4:
                 raise ValueError
             break
         except ValueError:
-            print("A! Please enter a valid choice.")
+            print("\033[1;31;40mAn error occured! Please enter a valid choice (1/2/3/4).\033[0m")
 # Ask the user to input two numbers to perform the operation
     while True:
         try:
-            num1 = float(input("Enter first number:"))
-            num2 = float(input("Enter second number:"))
+            num1 = float(input("\033[1;33;40mEnter first number: \033[0m"))
+            num2 = float(input("\033[1;33;40mEnter second number: \033[0m"))
             break
         except ValueError:
 # An error message will appear if the user enter invalid number then ask to enter their choice again
-            print("An error occured! Please enter valid numbers.")
+            print("\033[1;31;40mAn error occured! Please enter a valid numbers.\033[0m")
 # Perform the selected operation
     if operation == 1:
         result = operate(num1, num2, "+")
@@ -66,22 +66,22 @@ def calculate():
         result = operate(num1, num2, "/")
         operator_symbol = "/"
 # Print the result
-    print((num1, operator_symbol, num2, result))
+    print("\033[1;34;40m{} {} {} = {}\033[0m".format(num1, operator_symbol, num2, result))
 
      # Ask the user if they want to perform another calculation with the given choices (yes or no)
     while True:
         try:
-            choice = input("Do you want to perform another calculation? (yes/no):")
+            choice = input("\033[1;33;40mDo you want to perform another calculation? (yes/no): \033[0m")
             if choice.lower() == 'yes':
                 calculate()
                 break
             elif choice.lower() == 'no':
-                print("Thank you and have a good day!")
+                print("\033[1;31;40mThank you and have a good day!\033[0m")
                 break
             else:
                 raise ValueError
         except ValueError:
-            print("Invalid input! Please enter 'yes' or 'no'")
+            print("\033[1;31;40mAn error occured! Please enter 'yes' or 'no'.\033[0m")
         calculate()
         return
     # Use the calculate function to start the program
