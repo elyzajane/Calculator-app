@@ -73,4 +73,6 @@ def calculate():
             print("Invalid input! Please enter 'yes' or 'no'")
         calculate()
         return
+    # Use the calculate function to start the program
+calculate()
 
