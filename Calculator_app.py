@@ -23,6 +23,9 @@ def calculate():
     print("Division")
 
 # Get user input for the chosen operation
+    while True:
+        try:
+            operation = int(input("Enter your choice (1/2/3/4):"))
 # An error  message will apper if the user enters an invalid choice
 # Ask the user to input two numbers to perform the operation
 # An error message will appear if the user enter invalid number then ask to enter their choice again
