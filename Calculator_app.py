@@ -1,6 +1,17 @@
-# Use def function to perform mathematical operations
+#Elyza Jane G. Relucio 
+#BSCPE 1-4
+
+# Display a greeting message for the user
+print("\033[1;35;40m╦ ╦ ╦═╗╦  ╦  ╔═╗")
+print("\033[1;35;40m╠═╣ ╠═ ║  ║  ║ ║")
+print("\033[1;35;40m╩ ╩ ╩═╝╩═╝╩═╝╚═╝\n")
+
+# Display a message reminding the user to use the calculator app wisely
+print("\033[1;31;40mKindly use the calculator app wisely!\033[0m")
+
 import operator
 
+# Use def function to perform mathematical operations
 def operate(num1, num2, op):
     # Use if-else statements to know which operation is needed
     if op == "+":
@@ -16,7 +27,7 @@ def operate(num1, num2, op):
 # Use def function to get user input 
 def calculate():
 # Display the options
-    print("Please choose the operation:")
+    print("Please choose the operation.")
     print("Addition")
     print("Subtraction")
     print("Multiplication")
