@@ -1,6 +1,8 @@
 #Elyza Jane G. Relucio 
 #BSCPE 1-4
 
+# A program that allows you to perform basic mathematical operations on two numbers. The program will then display the result and ask if you want to try again.
+
 # Display a greeting message for the user
 print("\033[1;35;40m╦ ╦ ╦═╗╦  ╦  ╔═╗")
 print("\033[1;35;40m╠═╣ ╠═ ║  ║  ║ ║")
