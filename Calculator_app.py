@@ -12,9 +12,16 @@ def operate(num1, num2, op):
     elif op == "/":
         return operator.truediv(num1, num2)
     else:
-        raise ValueError("\033[1;31;40mInvalid operator\033[0m")
+        raise ValueError("Invalid operator")
 # Use def function to get user input 
+def calculate():
 # Display the options
+    print("Please choose the operation:")
+    print("Addition")
+    print("Subtraction")
+    print("Multiplication")
+    print("Division")
+
 # Get user input for the chosen operation
 # An error  message will apper if the user enters an invalid choice
 # Ask the user to input two numbers to perform the operation
